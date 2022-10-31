@@ -6,7 +6,7 @@ import './Navbarmainpage1.scss'
 
 import { Link } from 'react-router-dom';
 
-export default function Navbarmainpage() {
+export default function Navbarmainpage(props) {
   return (
     <>
    <div id="navbar-mainpage">
@@ -31,7 +31,7 @@ export default function Navbarmainpage() {
                             </ul>
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0" id='nav1-item'>
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/">Welcome, Meghesh Nagpure</a>
+                                    <a className="nav-link active" aria-current="page" href="/">Welcome, {props.name}</a>
                                 </li>
                             </ul>
                         </div>

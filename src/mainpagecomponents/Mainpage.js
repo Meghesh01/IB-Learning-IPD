@@ -1,15 +1,60 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Mainpage1.scss';
 import Navbarmainpage from './Navbarmainpage';
-
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Mainpage() {
+    const [user, setUser] = useState({})
+    const date = new Date();
+    // let phone = 9867075589;
+    const location = useLocation();
+    let phone = location.state.phone;
+    const userData = async (e) => {
+        //e.preventDefault();
+        // const { phone:phone} = user;
+        console.log("user");
+        console.log(location.state)
+        const res = await fetch("/get-mainpage", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+          phone,
+          }),
+        });
+        var data = await res.json();
+       
+
+        // console.log(data);
+        setUser({
+            name : data.data.name,
+            email: data.data.email,
+            phone: data.data.phone,
+            city : data.data.city,
+            state : data.data.state,
+            dob : data.data.dob,
+
+        });
+        // console.log("Hello");
+        // console.log(user);
+        // console.log(data.data);
+        // console.log(data.data.name);
+        
+      };
+      
+        
+      useEffect(() => {
+        userData();
+        
+      }, [])
+     
+      
     return (
         <>
-            
+   
            <div id="main-page">
-           <Navbarmainpage/>
+           <Navbarmainpage name = {user.name} />
             <div className="container">
                 <div className="main-body">
                     <div className="row gutters-sm">
@@ -20,11 +65,15 @@ export default function Mainpage() {
                                         <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" className="rounded-circle"
                                             width="150" />
                                         <div className="mt-3">
-                                            <h4>Meghesh Nagpure</h4>
+                                            <h4>{user.name}</h4>
                                             <p className="text-secondary mb-1">Student at IB Learning</p>
-                                            <p className="text-muted font-size-sm">Kalyan, Thane, Maharashtra</p>
+                                            <p className="text-muted font-size-sm">{user.city},{user.state}</p>
+                                            <Link to="/LevelsPage">
                                             <button type="button" class="btn btn-success mx-2">Start</button>
+                                            </Link>
+                                            <Link to="/">
                                             <button type="button" class="btn btn-danger mx-2">Logout</button>
+                                            </Link>
                                             <button type="button" class="btn btn-primary mx-2">Upload Photo</button>
                                         </div>
                                     </div>
@@ -74,7 +123,7 @@ export default function Mainpage() {
                                             <h6 className="mb-0">Full Name</h6>
                                         </div>
                                         <div className="col-sm-9 ">
-                                            Meghesh N. Nagpure
+                                            {user.name}
                                         </div>
                                     </div>
                                     <hr />
@@ -83,7 +132,7 @@ export default function Mainpage() {
                                             <h6 className="mb-0">Mobile</h6>
                                         </div>
                                         <div className="col-sm-9 ">
-                                            9564589940
+                                            {user.phone}
                                         </div>
                                     </div>
                                     <hr />
@@ -92,7 +141,7 @@ export default function Mainpage() {
                                             <h6 className="mb-0">Email</h6>
                                         </div>
                                         <div className="col-sm-9 ">
-                                            meghesh@gmail.com
+                                           {user.email}
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +159,9 @@ export default function Mainpage() {
                                             <h6 className="mb-0">Date of Birth</h6>
                                         </div>
                                         <div className="col-sm-9 ">
-                                            13 / 10 / 2001
+
+                                            {
+                                            new Date(user.dob).toDateString()}
                                         </div>
                                     </div>
                                     <hr />
@@ -119,7 +170,7 @@ export default function Mainpage() {
                                             <h6 className="mb-0">Age</h6>
                                         </div>
                                         <div className="col-sm-9 ">
-                                            20 yrs
+                                            {date.getFullYear()-new Date(user.dob).getFullYear()}
                                         </div>
                                     </div>
                                     <hr />
@@ -128,25 +179,25 @@ export default function Mainpage() {
                                             <h6 className="mb-0">City / Village / Town</h6>
                                         </div>
                                         <div className="col-sm-9 ">
-                                            Kalyan
+                                            {user.city}
                                         </div>
                                     </div>
-                                    <hr />
-                                    <div className="row">
+                                    {/* <hr /> */}
+                                    {/* <div className="row">
                                         <div className="col-sm-3">
                                             <h6 className="mb-0">District</h6>
                                         </div>
                                         <div className="col-sm-9 ">
                                             Thane
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <hr />
                                     <div className="row">
                                         <div className="col-sm-3">
                                             <h6 className="mb-0">State</h6>
                                         </div>
                                         <div className="col-sm-9">
-                                            Maharashtra
+                                         {user.state}
                                         </div>
                                     </div>
                                 </div>
