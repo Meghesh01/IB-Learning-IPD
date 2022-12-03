@@ -7,11 +7,13 @@ import LandingPage from './LandingPageComponents/LandingPage/LandingPage';
 import Scoreboard from './ScoreboardComponents/Scoreboard';
 import Login from './LoginComponents/Login';
 import LevelsPage from './LandingPageComponents/LevelsPage/LevelsPage';
+import Level2  from './Level2components/Level2';
 
 import {
   Routes,
   Route,
 } from "react-router-dom";
+
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
         <Route path="/Viewpassbook" element={<Viewpassbook/>} />
         <Route path="/Scoreboard" element={<Scoreboard/>} />
         <Route path="/LevelsPage" element={<LevelsPage/>} />
+        <Route path="/Level2" element={<Level2/>} />
       </Routes>
 
      

@@ -21,7 +21,7 @@ export default function Team() {
                         <div className="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                         <div className="member">
                             <div className="member-img">
-                            <img src={team1} className="img-fluid" alt=""/>
+                            <img src={team3} className="img-fluid" alt=""/>
                             <div className="social">
                                 <a href=""><i className="bi bi-twitter"></i></a>
                                 <a href=""><i className="bi bi-facebook"></i></a>
@@ -30,9 +30,9 @@ export default function Team() {
                             </div>
                             </div>
                             <div className="member-info">
-                            <h4>Walter White</h4>
-                            <span>Chief Executive Officer</span>
-                            <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                            <h4>Meghesh Nagpure</h4>
+                            <span><b>Leader</b></span>
+                            
                             </div>
                         </div>
                         </div>
@@ -40,7 +40,7 @@ export default function Team() {
                         <div className="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                         <div className="member">
                             <div className="member-img">
-                            <img src={team2} className="img-fluid" alt=""/>
+                            <img src={team3} className="img-fluid" alt=""/>
                             <div className="social">
                                 <a href=""><i className="bi bi-twitter"></i></a>
                                 <a href=""><i className="bi bi-facebook"></i></a>
@@ -49,9 +49,9 @@ export default function Team() {
                             </div>
                             </div>
                             <div className="member-info">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Product Manager</span>
-                            <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+                            <h4>Tejas Bhat</h4>
+                            <span><b>Team Member</b></span>
+                            
                             </div>
                         </div>
                         </div>
@@ -68,9 +68,9 @@ export default function Team() {
                             </div>
                             </div>
                             <div className="member-info">
-                            <h4>William Anderson</h4>
-                            <span>CTO</span>
-                            <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+                            <h4>Rahul Kalathia</h4>
+                            <span><b>Team Member</b></span>
+                            
                             </div>
                         </div>
                         </div>
