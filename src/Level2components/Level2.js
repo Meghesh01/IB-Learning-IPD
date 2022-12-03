@@ -53,7 +53,7 @@ export default function Level2() {
             <li><a href="/">ADD BENEFICIARY</a></li>
             <li class="nav-item dropdown"><a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a>
             <ul class="dropdown-menu">
-			  <li><a class="dropdown-item" href="/QuickTransfer"> Quick Transfer</a></li>
+			  <li><a class="dropdown-item" href="/QuickTransfer.js"> Quick Transfer</a></li>
 			  <li><a class="dropdown-item" href="#"> Transfer Beneficiary</a></li>
 			  {/* <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li> */}
 		    </ul>

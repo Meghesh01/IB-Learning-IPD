@@ -13,6 +13,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import QuickTransfer from './Level2components/QuickTransfer';
 
 
 
@@ -28,6 +29,8 @@ function App() {
         <Route path="/Scoreboard" element={<Scoreboard/>} />
         <Route path="/LevelsPage" element={<LevelsPage/>} />
         <Route path="/Level2" element={<Level2/>} />
+        <Route path="/QuickTransfer" element={<QuickTransfer/>} />
+
       </Routes>
 
      
