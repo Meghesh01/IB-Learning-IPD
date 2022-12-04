@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import './Quicktransfer.css';
+import './QuickTransfer.scss';
 import { Link} from 'react-router-dom';
 import sbilogo from './sbi-logo.png';
 import logoutlogo from './logout.png';
@@ -11,7 +11,7 @@ import rupeeblack from '../images/rupeeblack.png'
 
 export default function QuickTransfer() {
   return (
-    <div>
+    <div id="QuickTransfer">
       <section>
     <Navbar bg="light" expand="lg" fixed="top">
       <Container>

@@ -1,7 +1,8 @@
 #Level1{
     $color_1: rgb(16, 58, 87);
 $color_2: rgb(205, 27, 27);
-$background-color_1: rgb(194, 223, 245);
+$background-color_1: rgb(142, 196, 235);
+
 
 box-sizing: border-box;
 overflow: hidden;
@@ -31,7 +32,7 @@ li {
 .row {
 	display: flex;
 	padding-left: 50px;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 .column {
 	flex: 50%;

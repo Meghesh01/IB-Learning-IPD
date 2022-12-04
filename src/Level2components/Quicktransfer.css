@@ -9,11 +9,11 @@
     margin: 0;
     padding: 20px 20px;
     /* overflow: hidden; */
-    background-color: rgb(129, 192, 238);
+    background-color: rgb(142, 196, 235);
     height: 60px;
   }
   .max-width{
-    width: 800px;
+    width: 1000px;
     /* border: 1px solid; */
     margin-left: auto;
     margin-right: auto;
@@ -29,15 +29,15 @@
 }
 
 .max-width .list1 ul li:nth-child(2){
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .max-width .list1 ul li:nth-child(3){
-    margin-left: 140px;
+    margin-left: 190px;
 }
 
 .max-width .list1 ul li:nth-child(4){
-    margin-left: 170px;
+    margin-left: 250px;
 }
 .hr{
     color: rgb(51, 49, 49);
@@ -53,11 +53,11 @@
 }
 
 .max-width .list2 ul li:nth-child(3){
-    margin-left: 150px;
+    margin-left: 190px;
 }
 
 .max-width .list2 ul li:nth-child(4){
-    margin-left: 160px;
+    margin-left: 330px;
 }
 .rupeeblack{
    
@@ -159,7 +159,7 @@ input:focus{
   padding-bottom: 5px;
   text-align: center;
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: all 0.5s;
   background-size: 200% auto;
   color: white;
   border-radius: 5px;
@@ -172,6 +172,7 @@ input:focus{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  
 }
 
 .button-87:hover {
@@ -179,6 +180,7 @@ input:focus{
   /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+  transform: translatey(-2px);
 }
 
 .button-87:active {
