@@ -1,0 +1,37 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(194, 223, 245);
+    height: 60px;
+  }
+  
+  li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: rgb(16, 58, 87);
+    font-weight: 500;
+  }
+
+  #redline{
+    color: rgb(205, 27, 27);
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  padding-left: 20px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px;
+}

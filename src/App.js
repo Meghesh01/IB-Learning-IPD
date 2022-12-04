@@ -7,6 +7,7 @@ import LandingPage from './LandingPageComponents/LandingPage/LandingPage';
 import Scoreboard from './ScoreboardComponents/Scoreboard';
 import Login from './LoginComponents/Login';
 import LevelsPage from './LandingPageComponents/LevelsPage/LevelsPage';
+import Level1 from './Level1components/Level1';
 import Level2  from './Level2components/Level2';
 
 import {
@@ -28,17 +29,11 @@ function App() {
         <Route path="/Viewpassbook" element={<Viewpassbook/>} />
         <Route path="/Scoreboard" element={<Scoreboard/>} />
         <Route path="/LevelsPage" element={<LevelsPage/>} />
+        <Route path="/Level1" element={<Level1/>} />
         <Route path="/Level2" element={<Level2/>} />
         <Route path="/QuickTransfer" element={<QuickTransfer/>} />
 
       </Routes>
-
-     
-
-      
-     
-     
-     
     </>
   );
 }

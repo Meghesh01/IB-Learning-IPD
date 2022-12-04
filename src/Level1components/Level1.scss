@@ -1,0 +1,39 @@
+#Level1{
+    $color_1: rgb(16, 58, 87);
+$color_2: rgb(205, 27, 27);
+$background-color_1: rgb(194, 223, 245);
+
+box-sizing: border-box;
+overflow: hidden;
+
+/* Create three equal columns that sits next to each other */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: $background-color_1;
+	height: 60px;
+}
+li {
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 20px 50px;
+	text-decoration: none;
+	color: $color_1;
+	font-weight: 500;
+}
+#redline {
+	color: $color_2;
+}
+
+.row {
+	display: flex;
+	padding-left: 50px;
+	margin-top: 10px;
+}
+.column {
+	flex: 50%;
+}
+}
