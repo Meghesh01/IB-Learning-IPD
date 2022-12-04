@@ -12,7 +12,7 @@ export default function Level() {
         <h1 className='levelselection'>LEVEL SELECTION</h1>
         <div className=' row'>
           <div className="col">
-          <Link to="/Level1">
+            <Link to="/Level1">
               <button class="button-29" role="button">1</button>
             </Link>
           </div>
@@ -37,7 +37,9 @@ export default function Level() {
             <button class="button-29" role="button">5</button>
           </div>
           <div className="col">
-            <button class="button-29" role="button">6</button>
+            <Link to="/Level6">
+              <button class="button-29" role="button">6</button>
+            </Link>
           </div>
           <div className="col">
             <button class="button-29" role="button">7</button>

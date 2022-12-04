@@ -9,6 +9,7 @@ import Login from './LoginComponents/Login';
 import LevelsPage from './LandingPageComponents/LevelsPage/LevelsPage';
 import Level1 from './Level1components/Level1';
 import Level2  from './Level2components/Level2';
+import Level6  from './Level6components/Level6';
 
 import {
   Routes,
@@ -31,7 +32,9 @@ function App() {
         <Route path="/LevelsPage" element={<LevelsPage/>} />
         <Route path="/Level1" element={<Level1/>} />
         <Route path="/Level2" element={<Level2/>} />
+        <Route path="/Level6" element={<Level6/>} />
         <Route path="/QuickTransfer" element={<QuickTransfer/>} />
+
 
       </Routes>
     </>
