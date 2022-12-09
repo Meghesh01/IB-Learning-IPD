@@ -17,8 +17,6 @@ import {
 } from "react-router-dom";
 import QuickTransfer from './Level2components/QuickTransfer';
 
-
-
 function App() {
   return (
     <>
@@ -34,8 +32,8 @@ function App() {
         <Route path="/Level2" element={<Level2/>} />
         <Route path="/Level6" element={<Level6/>} />
         <Route path="/QuickTransfer" element={<QuickTransfer/>} />
-
-
+        
+        
       </Routes>
     </>
   );
