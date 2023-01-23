@@ -42,10 +42,14 @@ export default function Level() {
             </Link>
           </div>
           <div className="col">
-            <button class="button-29" role="button">7</button>
+            <Link to="/Level7">
+              <button class="button-29" role="button">7</button>
+            </Link>
           </div>
           <div className="col">
-            <button class="button-29" role="button">8</button>
+          <Link to="/Level8">
+              <button class="button-29" role="button">8</button>
+            </Link>
           </div>
           <div className='col'>
             <button class="button-82" role="button">Test</button>
