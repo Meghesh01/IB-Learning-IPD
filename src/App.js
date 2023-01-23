@@ -10,12 +10,20 @@ import LevelsPage from './LandingPageComponents/LevelsPage/LevelsPage';
 import Level1 from './Level1components/Level1';
 import Level2  from './Level2components/Level2';
 import Level6  from './Level6components/Level6';
+import Level7  from './Level7components/Level7';
+import Level7EnterOTP  from './Level7components/Level7EnterOTP';
+import Level7SelectCard  from './Level7components/Level7SelectCard';
+import Level7Enter2DigitPin  from './Level7components/Level7Enter2DigitPin';
+import Level7Enter4DigitPin  from './Level7components/Level7Enter4DigitPin';
+import Level7CreatedPIN  from './Level7components/Level7CreatedPIN';
+import Level8  from './Level8components/Level8';
 
 import {
   Routes,
   Route,
 } from "react-router-dom";
 import QuickTransfer from './Level2components/QuickTransfer';
+import Level7SelectDebitAccount from './Level7components/Level7SelectDebitAccount';
 
 function App() {
   return (
@@ -31,6 +39,14 @@ function App() {
         <Route path="/Level1" element={<Level1/>} />
         <Route path="/Level2" element={<Level2/>} />
         <Route path="/Level6" element={<Level6/>} />
+        <Route path="/Level7" element={<Level7/>} />
+        <Route path="/Level7EnterOTP" element={<Level7EnterOTP/>} />
+        <Route path="/Level7SelectDebitAccount" element={<Level7SelectDebitAccount/>} />
+        <Route path="/Level7SelectCard" element={<Level7SelectCard/>} />
+        <Route path="/Level7Enter2DigitPin" element={<Level7Enter2DigitPin/>} />
+        <Route path="/Level7Enter4DigitPin" element={<Level7Enter4DigitPin/>} />
+        <Route path="/Level7CreatedPIN" element={<Level7CreatedPIN/>} />
+        <Route path="/Level8" element={<Level8/>} />
         <Route path="/QuickTransfer" element={<QuickTransfer/>} />
         
         

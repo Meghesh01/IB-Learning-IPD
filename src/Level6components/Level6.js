@@ -44,7 +44,7 @@ export default function Level6() {
 
     <section className='nav-2' style={{ marginTop: 60 }} >
         <ul >
-            <li><b>Request ATM Card</b></li>
+            <li><b>APPLY FOR VIRTUAL DEBIT CARD</b></li>
             </ul>
     </section>
     <section className='max-width'>
