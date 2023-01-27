@@ -21,7 +21,7 @@ export default function About() {
                         <div className="content">
                             <h2>Mission</h2>
                             <p>
-                                We want to provide the best experience for all our students to learn about internet banking in a fun way. 
+                                We want to provide the best experience for all our learners to learn about internet banking in a fun way. 
                                 This will help them to do banking tasks in a much easier and faster way in the real world.
                             </p>
                         </div>

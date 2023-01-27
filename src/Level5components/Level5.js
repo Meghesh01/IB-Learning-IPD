@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbarmainpage from './Navbarmainpage'
-import './Viewpassbook1.scss'
+import './Level5.css'
 
 
-export default function Viewpassbook() {
+export default function Level5() {
   return (
     <>
-    <div id="view-passbook">
+    <div id="Level5">
     <Navbarmainpage/>
     <div className="container">
     <h2 className = "transac">Transactions : </h2>

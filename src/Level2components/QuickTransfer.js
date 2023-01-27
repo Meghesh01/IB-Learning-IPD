@@ -8,8 +8,48 @@ import { Link} from 'react-router-dom';
 import sbilogo from './sbi-logo.png';
 import logoutlogo from './logout.png';
 import rupeeblack from '../images/rupeeblack.png'
+import Modal from 'react-bootstrap/Modal';
+import L2_completedaudio from "./L2_completed_audio.mp3";
+import partyPopper from './party-popper.png';
+import coins from '../images/coins.png'
+import Button from 'react-bootstrap/Button';
 
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="md"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton style={{ color: 'white', backgroundColor: 'black' }}>
+        <Modal.Title id="contained-modal-title-vcenter" style={{ fontStyle: 'italic', marginLeft: '62px' }}>
+          <img src={partyPopper} className="party_popper" alt="partypop" style={{ height: 40, marginRight: 10, marginBottom: 10 }} />
+          CONGRATULATIONS
+          <img src={partyPopper} className="party_popper" alt="partypop" style={{ height: 40, marginLeft: 10, marginBottom: 10 }} />
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body style={{ backgroundColor: 'lightGreen', textAlign: 'center' }}>
+        <h4 style={{ color: 'darkGreen', fontSize: '30px' }}>Level 2 Completed !!!</h4>
+        <p style={{ fontSize: '20px' }} >
+          Heartily Congratulations for your first victory. You have successfully learnt to perform quick transfer.
+        </p>
+        <p style={{ fontSize: '20px', textAlign: 'center' }} className="fw-bold">Coins Earned: <img src={coins} className="coins" alt="coin" style={{ height: '40px' }} /> 20 pts</p>
+      </Modal.Body>
+      <Modal.Footer>
+        {/* <Button onClick={props.onHide}>Close</Button> */}
+        <Link to="/LevelsPage">
+          <button type="button" class="btn btn-danger mx-2">Close</button>
+        </Link>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 export default function QuickTransfer() {
+
+  const audio5 = new Audio(L2_completedaudio);
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <div id="QuickTransfer">
       <section>
@@ -105,7 +145,14 @@ export default function QuickTransfer() {
       </div>
       <div className="list8">
         <ul>
-          <li><button className='button-87'><b>Submit</b></button></li>
+          {/* <li><button className='button-87'><b>Submit</b></button></li> */}
+          <li><Button className='button-87' style={{ width: '100px', marginRight: '10px' }} onClick={(e) => { e.preventDefault(); setModalShow(true) ; audio5.loop = false; audio5.play();} } >
+                  Submit
+                </Button>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  // onHide={() => setModalShow(false)}
+                /></li>
           <li><button className='button-87'><b>Cancel</b></button></li>
         </ul>
       </div>

@@ -12,6 +12,7 @@ import bankimg3 from './bankimg3.jpg';
 import sbilogo from './sbi-logo.png';
 import logoutlogo from './logout.png';
 
+
 export default function Level2() {
   return (
     <>
@@ -21,7 +22,7 @@ export default function Level2() {
     <Navbar bg="light" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand href="#home">
-        <img src={sbilogo} className="sbi-logo" alt="sbi" style={{height : 40 , marginRight: 7}}/>
+        <img src={sbilogo} className="sbi-logo" alt="sbi" style={{height : 48 , marginRight: 7}}/>
               <b>BANK ONLINE</b></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav" className="mx-5 justify-content-end">
@@ -50,15 +51,20 @@ export default function Level2() {
     <section style={{ marginTop: 60 }} >
         <ul className='nav-2'>
             <li><a className="active" href="/">MY PROFILE</a></li>
-            <li><a href="/">ADD BENEFICIARY</a></li>
+            <li><a href="/Level3">ADD BENEFICIARY</a></li>
             <li class="nav-item dropdown"><a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  PAYMENTS/TRANSFER  </a>
             <ul class="dropdown-menu">
 			  <li><a class="dropdown-item2" href="/QuickTransfer"> Quick Transfer</a></li>
-			  <li><a class="dropdown-item2" href="#"> Transfer Beneficiary</a></li>
+			  <li><a class="dropdown-item2" href="/Level4"> Transfer Beneficiary</a></li>
 			  {/* <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li> */}
 		    </ul>
         </li> 
-            <li><a href="/">CARDS</a></li>
+            <li class="nav-item dropdown"><a a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">CARDS</a>
+            <ul class="dropdown-menu">  
+			  <li><a class="dropdown-item3" href="/Level6"> <b>ATM CARD</b></a></li>
+        <li><a class="dropdown-item3" href="/Level6"> DEBIT CARD</a></li>
+        </ul>
+        </li>
             <li><a href="/">BILL PAYMENTS</a></li>
             <li><a href="/">BE SAFE</a></li>
             <li><a href="/">PERSONAL LOAN</a></li>
@@ -79,7 +85,7 @@ export default function Level2() {
             <td>60003200024</td>
             <td>Kalyan</td>
             <td>Rs. 20,000 /-</td>
-            <td><a href = "/">Click here</a></td>
+            <td><a href = "/Level5components/Level5.js">Click here</a></td>
         </tr>
     </table>
     </section>

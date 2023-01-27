@@ -6,7 +6,9 @@ import logo from '../images/Landing Page images/logo.png'
 import { useState } from "react";
 
 import { Link } from 'react-router-dom';
-
+// function loadgoogletranslate(){
+//   new google.translate.TranslateElement("landing-page")
+// }
 export default function Header() {
   useEffect(() => {
     AOS.init({
@@ -17,54 +19,14 @@ export default function Header() {
     AOS.refresh();
   }, []);
 
-  const [inputText, setInputText] = useState('');
-  const [outputText, setOutputText] = useState('');
 
-  const translate = () => {
+  // useEffect(() => {
+  //   const script = document.createElement("script")
 
-    var HTMLelems = document.getElementsByClassName('translateHindi');
-    
-    for(var i=0;i< HTMLelems.length;i++){
-      var changeText = HTMLelems[i].innerHTML;
-      console.log(changeText);
-      const options = {
-        method: 'POST',
-        headers: {
-          'content-type': 'application/json',
-          'X-RapidAPI-Key': process.env.REACT_APP_RapidAPI_Key,
-          'X-RapidAPI-Host': 'microsoft-translator-text.p.rapidapi.com'
-        },
-        body: `[{"Text":"${changeText}"}]`
-      };
-    
-      fetch(`${process.env.REACT_APP_Base_URL}hi${process.env.REACT_APP_Query_Params}`, options)
-      .then(response => response.json())
-      .then(response => { 
-        changeText = response[0].translations[0].text;
-        HTMLelems[i].innerHTML = '<p>{changeText}</p>';
-        console.log(changeText);
-      })
-      .catch(err => console.error(err));
-      console.log(changeText);
-    }
-
-  }
-
-  // const translateToHindi=()=>{
-  //   var HTMLelems = document.getElementsByClassName('translateHindi');
+  //   script.src = 
+  //   "http://translate.google.com/translate_a/element.js?cb=loadgoogletranslate";
+  // }, [])
   
-  //   for(var i=0;i< HTMLelems.length;i++){
-  //     setInputText(HTMLelems[i].innerHTML);
-  //     console.log("Hello");
-  //     console.log(HTMLelems[i].innerHTML);
-  //     console.log(inputText);
-  //     translate();
-  //     console.log(outputText);
-  //     console.log("Bye");
-  //     HTMLelems[i].innerHTML = outputText;
-  //     console.log(HTMLelems[i].innerHTML);
-  //   }
-  // }
 
   return (
     <>
