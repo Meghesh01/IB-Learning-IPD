@@ -34,10 +34,10 @@ $background-color_1: rgb(142, 196, 235);
 			padding-top: 15px;
 			li {
 				&:nth-child(2) {
-					margin-left: 150px;
+					margin-left: 135px;
 				}
 				&:nth-child(3) {
-					margin-left: 190px;
+					margin-left: 145px;
 				}
 				&:nth-child(4) {
 					margin-left: 250px;
@@ -58,7 +58,7 @@ $background-color_1: rgb(142, 196, 235);
 					margin-left: 190px;
 				}
 				&:nth-child(4) {
-					margin-left: 330px;
+					margin-left: 250px;
 				}
 			}
 		}
@@ -134,9 +134,9 @@ $background-color_1: rgb(142, 196, 235);
 			list-style: none;
 			padding-top: 0px;
 			li {
-				margin-left: 300px;
+				margin-left: 370px;
 				&:nth-child(2) {
-					margin-left: 20px;
+					margin-left: 30px;
 				}
 				button-87 {
 					padding-bottom: 10px;
@@ -152,7 +152,7 @@ $background-color_1: rgb(142, 196, 235);
 .rupeeblack {
 	width: 15px;
 	vertical-align: middle;
-	height: 18px;
+	height: 14px;
 	color: $color_2;
 }
 input {

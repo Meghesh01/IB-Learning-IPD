@@ -16,7 +16,7 @@ export default function Level6() {
     <Navbar bg="light" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand href="#home">
-        <img src={sbilogo} className="sbi-logo" alt="sbi" style={{height : 40 , marginRight: 7}}/>
+        <img src={sbilogo} className="sbi-logo" alt="sbi" style={{height : 48 , marginRight: 7}}/>
               <b>BANK ONLINE</b></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav" className="mx-5 justify-content-end">
@@ -44,12 +44,12 @@ export default function Level6() {
 
     <section className='nav-2' style={{ marginTop: 60 }} >
         <ul >
-            <li><b>Request ATM Card</b></li>
+            <li><b>APPLY FOR ATM Card</b></li>
             </ul>
     </section>
     <section className='max-width'>
     <div className="container pri-account">
-                <p style={{ textAlign: "left", fontSize: 20, marginTop: 10 }}>
+                <p style={{ textAlign: "left", fontSize: 20}}>
                     <b className='pri'>Select Primary Account</b>
                 </p> 
     </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -59,9 +59,16 @@ function MyVerticallyCenteredModal(props) {
 }
 
 export default function Level1() {
-
+  useEffect(() => {
+    
   const audio = new Audio(L1_WelcomeAudio);
   audio.play();
+  
+  }, [])
+  
+ 
+  // const audio = new Audio(L1_WelcomeAudio);
+  // audio.play();
   
   const audio1 = new Audio(UsernameAudio);
   const audio2 = new Audio(PasswordAudio);
@@ -78,7 +85,7 @@ export default function Level1() {
           <Navbar bg="light" expand="lg" fixed="top">
             <Container>
               <Navbar.Brand href="#home">
-                <img src={sbilogo} className="sbi-logo" alt="sbi" style={{ height: 40, marginRight: 7 }} />
+                <img src={sbilogo} className="sbi-logo" alt="sbi" style={{ height: 48, marginRight: 7 }} />
                 <b>BANK ONLINE</b></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav" className="mx-5 justify-content-end">
@@ -142,7 +149,7 @@ export default function Level1() {
                   <img src={captcha_img} className="captcha_img" alt="img_captcha" style={{ marginTop: '10px' }} />
                 </Form.Group>
 
-                <Button style={{ width: '100px', marginRight: '10px' }} onClick={() => {setModalShow(true) ; audio5.loop = false; audio5.play();} } >
+                <Button style={{ width: '100px', marginRight: '10px' }} onClick={(e) => { e.preventDefault(); setModalShow(true) ; audio5.loop = false; audio5.play();} } >
                   Submit
                 </Button>
                 <MyVerticallyCenteredModal

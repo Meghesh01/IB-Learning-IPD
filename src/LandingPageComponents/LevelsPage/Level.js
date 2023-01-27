@@ -13,20 +13,29 @@ export default function Level() {
         <div className=' row'>
           <div className="col">
             <Link to="/Level1">
-              <button class="button-29" role="button">1</button>
+              <button class="button-29" role="button">
+              1  </button>
             </Link>
           </div>
           <div className="col">
           <Link to="/Level2">
-              <button class="button-29" role="button">2</button>
+              <button class="button-29" role="button">
+                2
+                
+                </button>
             </Link>
             
           </div>
           <div className="col">
+          <Link to="/Level2">
             <button class="button-29" role="button">3</button>
+            </Link>
+
           </div>
           <div className="col">
+          <Link to="/Level2">
             <button class="button-29" role="button">4</button>
+            </Link>
           </div>
           <div className='col'>
             <button class="button-82" role="button">Test</button>
@@ -34,10 +43,12 @@ export default function Level() {
         </div>
         <div className='row'>
           <div className="col">
+          <Link to="/Level2">
             <button class="button-29" role="button">5</button>
+            </Link>
           </div>
           <div className="col">
-            <Link to="/Level6">
+            <Link to="/Level2">
               <button class="button-29" role="button">6</button>
             </Link>
           </div>

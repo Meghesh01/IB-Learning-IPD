@@ -28,7 +28,7 @@ export default function Navbarmainpage() {
                             </ul>
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0" id='nav1-item'>
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/">Welcome, Meghesh Nagpure</a>
+                                    <a className="nav-link active" aria-current="page" href="/">Welcome Meghesh Nagpure</a>
                                 </li>
                             </ul>
                         </div>

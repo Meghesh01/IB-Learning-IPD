@@ -5,7 +5,9 @@ import '../Styles/style1.scss'
 import logo from '../images/Landing Page images/logo.png'
 
 import { Link } from 'react-router-dom';
-
+// function loadgoogletranslate(){
+//   new google.translate.TranslateElement("landing-page")
+// }
 export default function Header() {
   useEffect(() => {
     AOS.init({
@@ -15,6 +17,14 @@ export default function Header() {
     });
     AOS.refresh();
   }, []);
+
+  // useEffect(() => {
+  //   const script = document.createElement("script")
+
+  //   script.src = 
+  //   "http://translate.google.com/translate_a/element.js?cb=loadgoogletranslate";
+  // }, [])
+  
   return (
     <>
         <header id="header" className="header fixed-top">
