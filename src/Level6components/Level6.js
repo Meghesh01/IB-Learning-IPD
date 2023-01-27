@@ -43,8 +43,10 @@ export default function Level6() {
     </section>
 
     <section className='nav-2' style={{ marginTop: 60 }} >
-        <ul >
+        <ul 
             <li><b>APPLY FOR ATM Card</b></li>
+
+
             </ul>
     </section>
     <section className='max-width'>

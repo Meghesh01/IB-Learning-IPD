@@ -10,13 +10,17 @@ import LevelsPage from './LandingPageComponents/LevelsPage/LevelsPage';
 import Level1 from './Level1components/Level1';
 import Level2  from './Level2components/Level2';
 import Level6  from './Level6components/Level6';
+
 import Level3  from './Level3components/Level3';
 import Level4  from './Level4components/Level4';
+=======
+
 import {
   Routes,
   Route,
 } from "react-router-dom";
 import QuickTransfer from './Level2components/QuickTransfer';
+import Level7SelectDebitAccount from './Level7components/Level7SelectDebitAccount';
 
 function App() {
   return (
@@ -32,8 +36,10 @@ function App() {
         <Route path="/Level1" element={<Level1/>} />
         <Route path="/Level2" element={<Level2/>} />
         <Route path="/Level6" element={<Level6/>} />
+
         <Route path="/Level3" element={<Level3/>} />
         <Route path="/Level4" element={<Level4/>} />
+
         <Route path="/QuickTransfer" element={<QuickTransfer/>} />
 
 
